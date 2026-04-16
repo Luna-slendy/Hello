@@ -13,7 +13,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Pull latest main
+      - name: Configure git
         run: |
-          git fetch origin main
-          git merge origin/main
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Sync main into all branches
+        run: |
+          git fetch --all
+
+          for branch in $(git branch -r | grep -v 'origin/main' | sed 's/origin\///'); do
+            echo "Updating $branch"
+
+            git checkout $branch || git checkout -b $branch origin/$branch
+            git merge origin/main --no-edit
+
+            git push origin $branch
+          done
