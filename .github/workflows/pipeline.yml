@@ -1,4 +1,4 @@
-name: pipeline
+name: sync-local
 
 on:
   push:
@@ -9,16 +9,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Pull latest changes
+      - name: Pull latest changes into local repo
         run: |
-          git fetch origin main
-          git reset --hard origin/main
-
-      - name: Show files
-        run: ls -la
-
-      - name: Pull
-        run: git pull origin main
+          cd C:\Users\flawy\Documents\pipeline\main\Hello
+          git pull origin main

@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "Luna-slendy/Hello",
+  "pipelineDirectory": "Hello",
+  "workspaceDirectory": "Hello\\Hello",
+  "repositories": {
+    "Luna-slendy/Hello": {
+      "repositoryPath": "Hello\\Hello",
+      "lastRunOn": "04/17/2026 13:39:22 +03:00"
+    }
+  },
+  "lastRunOn": "04/17/2026 13:39:22 +03:00"
+}
