@@ -13,3 +13,8 @@ jobs:
         run: |
           cd C:\Users\flawy\Documents\pipeline\main\Hello
           git pull origin main
+
+      - name: Run hello.py
+        run: |
+          cd C:\Users\flawy\Documents\pipeline\main\Hello
+          python hello.py
