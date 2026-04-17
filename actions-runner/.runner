@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 21,
+  "agentName": "LUNAR_LS",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus21.actions.githubusercontent.com/6gLDCYQ1FqG8j0PhSx8LMkFVPUsNrwLpena6UiQoNaFymIHjrq/",
+  "gitHubUrl": "https://github.com/Luna-slendy/Hello",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
